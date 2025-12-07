@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Vibes - 2 Piece Collection</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Playfair+Display:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================= NAV BAR ========================= -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="Urban Vibes Logo">
+            <span>Urban Vibes</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Categories ▾</a>
+                <div class="dropdown-menu">
+                    <a href="product.html">All Products</a>
+                    <a href="2piece.html" class="active">2 Piece</a>
+                    <a href="3piece.html">3 Piece</a>
+                    <a href="perfumes.html">Fragrances</a>
+                </div>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ========================= PAGE HEADER ========================= -->
+    <header class="page-header">
+        <h1>2 Piece Collection</h1>
+        <p>Elegant two-piece designs inspired by traditional Eastern wear.</p>
+    </header>
+
+    <!-- ========================= PRODUCTS GRID ========================= -->
+    <!--by js-->
+    <section class="product-section">
+        <div id="productContainer" class="product-grid">
+            <!-- JS will load filtered products here -->
+        </div>
+    </section>
+
+    <!--by manual-->
+    <section class="product-section">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="2piece/2piece1.jpg" alt="2 Piece Set 1" loading="lazy">
+                <h3>2 Piece Set 1</h3>
+                <p class="price">₨4,500</p>
+                <div class="desc">
+                    <p>Classic embroidered two-piece.</p>
+                    <button class="add-cart-btn">Buy now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="2piece/2piece2.jpg" alt="2 Piece Set 2" loading="lazy">
+                <h3>2 Piece Set 2</h3>
+                <p class="price">₨5,200</p>
+                <div class="desc">
+                    <p>Stylish modern cut.</p>
+                    <button class="add-cart-btn">Buy now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="2piece/2piece3.jpg" alt="2 Piece Set 3" loading="lazy">
+                <h3>2 Piece Set 3</h3>
+                <p class="price">₨4,800</p>
+                <div class="desc">
+                    <p>Comfortable everyday wear.</p>
+                    <button class="add-cart-btn">Buy now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="2piece/2piece4.jpg" alt="2 Piece Set 4" loading="lazy">
+                <h3>2 Piece Set 4</h3>
+                <p class="price">₨6,000</p>
+                <div class="desc">
+                    <p>Luxury fabric with detailing.</p>
+                    <button class="add-cart-btn">Buy now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="2piece/2piece5.jpg" alt="2 Piece Set 5" loading="lazy">
+                <h3>2 Piece Set 5</h3>
+                <p class="price">₨5,500</p>
+                <div class="desc">
+                    <p>Traditional patterns, modern fit.</p>
+                    <button class="add-cart-btn">Buy now</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="2piece/2piece6.jpg" alt="2 Piece Set 6" loading="lazy">
+                <h3>2 Piece Set 6</h3>
+                <p class="price">₨4,300</p>
+                <div class="desc">
+                    <p>Lightweight and breathable.</p>
+                    <button class="add-cart-btn">Buy now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="footer">
+        <div class="footer-section">
+            <h3>Urban Vibes</h3>
+            <p>Email: urban.vibes.contact@gmail.com</p>
+            <p>Phone: +92 (300) 111 9696</p>
+            <p><em>"Tradition Woven Into Style"</em></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="products.html">All Products</a></p>
+            <p><a href="contact.html">Contact</a></p>
+            <p><a href="about.html">About</a></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="facebook.jpg" alt="Facebook"></a>
+                <a href="#"><img src="insta.jpg" alt="Instagram"></a>
+                <a href="#"><img src="tiktok.jpg" alt="Twitter"></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 Urban Vibes. All Rights Reserved.
+        </div>
+    </footer>
+
+
+    <!-- JS Files -->
+    <script>
+        // Build a small local products array using your 2piece images (images/2piece1.jpg ... images/2piece6.jpg)
+        window.onload = function () {
+            const container = document.getElementById("productContainer");
+
+            const products = [
+                { id: 1, name: "2 Piece Set 1", price: "₨4,500", description: "Classic embroidered two-piece.", image: "2piece/2piece1.jpg", category: "2piece" },
+                { id: 2, name: "2 Piece Set 2", price: "₨5,200", description: "Stylish modern cut.", image: "2piece/2piece2.jpg", category: "2piece" },
+                { id: 3, name: "2 Piece Set 3", price: "₨4,800", description: "Comfortable everyday wear.", image: "2piece/2piece3.jpg", category: "2piece" },
+                { id: 4, name: "2 Piece Set 4", price: "₨6,000", description: "Luxury fabric with detailing.", image: "2piece/2piece4.jpg", category: "2piece" },
+                { id: 5, name: "2 Piece Set 5", price: "₨5,500", description: "Traditional patterns, modern fit.", image: "2piece/2piece5.jpg", category: "2piece" },
+                { id: 6, name: "2 Piece Set 6", price: "₨4,300", description: "Lightweight and breathable.", image: "2piece/2piece6.jpg", category: "2piece" }
+            ];
+
+            // Clear any existing content
+            container.innerHTML = "";
+
+            // Filter just in case and render
+            const filtered = products.filter(p => p.category === "2piece");
+
+            filtered.forEach(product => {
+                const card = document.createElement("div");
+                card.className = "product-card";
+
+                card.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}" loading="lazy">
+                    <h3>${product.name}</h3>
+                    <p class="price">${product.price}</p>
+                    <div class="desc">
+                    <p>${product.description}</p>
+                    <button class="add-cart-btn">Buy now</button>
+                </div>
+                `;
+
+                container.appendChild(card);
+            });
+        };
+    </script>
+
+</body>
+
+</html>
